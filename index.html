@@ -17,7 +17,7 @@
         </div>
         <div class="flex-1 text-center sm:text-left">
           <h1 class="text-2xl font-bold">Prabesh Bimali</h1>
-          <p class="text-sm text-gray-500">Full‑Stack Developer • Software Engineer • Product Thinker</p>
+          <p class="text-sm text-gray-500">Backend Engineer • Full-Stack Developer</p>
           <div class="mt-3 flex flex-wrap justify-center sm:justify-start gap-3 text-xs text-gray-600">
             <span>📍 Damak, Nepal</span>
             <span>✉️ prabeshlord111@gmail.com</span>
@@ -72,6 +72,24 @@
         <div class="lg:col-span-2 space-y-6">
           <section class="bg-white p-6 rounded-lg shadow">
             <h2 class="text-lg font-semibold">Experience</h2>
+            <article class="mt-6 border-l-2 border-indigo-100 pl-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <div class="font-medium">Backend Engineer</div>
+                  <div class="text-sm text-gray-500">Singha Tech — Jan 2024 — July 2025</div>
+                </div>
+                <div class="text-sm text-gray-500">Kathmandu, NP (Remote)</div>
+              </div>
+            
+              <ul class="mt-3 text-sm text-gray-600 list-disc ml-5 space-y-1">
+                <li>Designed and implemented backend services using <b>TypeScript (Node.js)</b> with a clean layered architecture.</li>
+                <li>Built REST APIs backed by <b>PostgreSQL</b>, focusing on data integrity, indexing, and query optimization.</li>
+                <li>Integrated <b>Redis</b> for caching, rate-limiting, and session management, reducing API response times significantly.</li>
+                <li>Worked with <b>WebSockets</b> for real-time features such as live updates and notifications.</li>
+                <li>Implemented authentication, role-based access control, and secure API practices.</li>
+                <li>Collaborated closely with frontend developers and QA to ship reliable features.</li>
+              </ul>
+            </article>
 
             <article class="mt-4 border-l-2 border-indigo-100 pl-4">
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -82,9 +100,10 @@
                 <div class="text-sm text-gray-500">Remote</div>
               </div>
               <ul class="mt-3 text-sm text-gray-600 list-disc ml-5 space-y-1">
-                <li>Led Automated UI testing for a Legacy project using Custom Framework.</li>
+                <li>Led Automated UI testing for a Legacy project (website that ran in IE) using Custom Framework in C#.</li>
+                <li>Contributed in Automated UI testing using Custom Framework for internal Banking software.</li>
                 <li>Created test cases and Tested API functionality, along with security using SOAP UI.</li>
-                <li>Wrote test cases and did Manual testing for a complex software and database</li>
+                <li>Wrote test cases and did Manual testing for a complex Banking software and database</li>
               </ul>
             </article>
 
@@ -97,53 +116,73 @@
                 <div class="text-sm text-gray-500">Itahari, NP</div>
               </div>
               <ul class="mt-3 text-sm text-gray-600 list-disc ml-5 space-y-1">
-                <li>Created scripts in python to convert data in plain text to csv format.</li>
-                <li></li>
+                <li>Wrote script in python to convert data in database to csv format.</li>
+                <li>Wrote script to summarize large data in csv files</li>
               </ul>
             </article>
           </section>
 
           <section class="bg-white p-6 rounded-lg shadow">
             <h2 class="text-lg font-semibold">Projects</h2>
-            <div class="mt-4 grid gap-4">
+
+            <div class="mt-4 grid gap-6">
               <div>
-                <div class="font-medium">Multiplayer Chess</div>
-                <div class="text-sm text-gray-500">Web-socket based multiplayer chess game created using express for backend and Nextjs for frontend.</div>
-                <div class="mt-1 flex flex-col gap-1">
-                  <a href="https://multiplayer-chess-five.vercel.app/" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Live Demo
-                  </a>
-                  <a href="https://github.com/PrabeshBimali/multiplayer-chess-backend" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Github Repo
-                  </a>
+                <div class="font-medium">Multiplayer Chess Platform</div>
+                <div class="text-sm text-gray-500">
+                  Real-time multiplayer chess application with time and memory efficient game logic.
+                </div>
+              
+                <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
+                  <li>Implemented real-time gameplay using <b>sockets</b> with server-side game state validation.</li>
+                  <li>Designed a custom chess engine using Bitboards Data structure handling move validation, turn logic, and synchronization.</li>
+                  <li>Used <b>Redis</b> for managing active game rooms and fast state access.</li>
+                  <li>Frontend built with <b>Next.js</b> focusing on responsiveness and low latency updates.</li>
+                  <li>Deployed frontend and backend separately with production-ready configuration.</li>
+                </ul>
+              
+                <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
+                  <a href="https://multiplayer-chess-five.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                  <a href="https://github.com/PrabeshBimali/multiplayer-chess-backend" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
                 </div>
               </div>
-
+            
               <div>
                 <div class="font-medium">Logic Gate Visualizer</div>
-                <div class="text-sm text-gray-500">Interactive tool to build and simulate logic circuits with draggable gates and live evaluation.</div>
-                <div class="mt-1 flex flex-col gap-1">
-                  <a href="https://simple-logicgates-sim-psi.vercel.app/" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Live Demo
-                  </a>
-                  <a href="https://github.com/PrabeshBimali/Simple-Logic-Gates-Simulator" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Github Repo
-                  </a>
+                <div class="text-sm text-gray-500">
+                  Interactive logic circuit simulator inspired by Logic.ly, built entirely for the web.
+                </div>
+              
+                <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
+                  <li>Implemented draggable logic gates with real-time boolean evaluation.</li>
+                  <li>Designed an internal Directed Asyclic Graph (DAG) to calculate Signal flow correctly.</li>
+                  <li>Built as an educational and experimentation tool for digital logic concepts.</li>
+                </ul>
+              
+                <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
+                  <a href="https://simple-logicgates-sim-psi.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                  <a href="https://github.com/PrabeshBimali/Simple-Logic-Gates-Simulator" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
                 </div>
               </div>
-
+            
               <div>
-                <div class="font-medium">Simple Algorithm Visualizer</div>
-                <div class="text-sm text-gray-500">Simple algorithm Visuzlizer that visuzlizes Maze generation algorithms, Pathfining algorithms, and basic sorting algorithms.</div>
-                <div class="mt-1 flex flex-col gap-1">
-                  <a href="https://algorithm-visualizer-bay.vercel.app/" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Live Demo
-                  </a>
-                  <a href="https://github.com/PrabeshBimali/Algorithm-Visualizer" class="text-blue-500 hover:text-blue-700 cursor-pointer">
-                    Github Repo
-                  </a>
+                <div class="font-medium">End-to-End Encrypted Chat Application <span class="text-xs text-gray-400">(In Progress)</span></div>
+                <div class="text-sm text-gray-500">
+                  Privacy-focused real-time chat application with strong cryptographic guarantees.
+                </div>
+              
+                <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
+                  <li>Designed an <b>end-to-end encryption (E2EE)</b> model using modern cryptographic primitives.</li>
+                  <li>Implemented key exchange, message encryption/decryption, and signature verification.</li>
+                  <li>Using <b>Sockets</b> for real-time communication while ensuring the server never accesses plaintext messages.</li>
+                  <li>Focused on security, threat modeling, and correctness over feature count.</li>
+                </ul>
+                
+                <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
+                  <a href="https://github.com/PrabeshBimali/secure-chat-frontend" target="_blank" class="text-blue-500 hover:text-blue-700">Frontend Repo</a>
+                  <a href="https://github.com/PrabeshBimali/secure-chat-backend" class="text-blue-500 hover:text-blue-700">Backend Repo</a>
                 </div>
               </div>
+            
             </div>
           </section>
 
@@ -152,7 +191,6 @@
             <p class="mt-2 text-sm text-gray-600">I'm available for freelance and full-time roles. Reach out and let's talk.</p>
             <div class="mt-4 flex flex-wrap gap-3">
               <a href="" class="inline-block px-4 py-2 rounded-lg border text-sm">prabeshlord111@gmail.com</a>
-              <a href="https://github.com/PrabeshBimali" target="_blank" class="inline-block px-4 py-2 rounded-lg border text-sm cursor-pointer">GitHub</a>
             </div>
           </section>
         </div>
