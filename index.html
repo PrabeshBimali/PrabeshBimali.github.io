@@ -38,26 +38,20 @@
         <aside class="lg:col-span-1 space-y-4">
           <div class="bg-white p-4 rounded-lg shadow">
             <h3 class="font-semibold text-sm text-gray-700">Summary</h3>
-            <p class="mt-2 text-sm text-gray-600">Product-minded engineer with 2+ years building web apps and developer tooling. I enjoy turning complex problems into simple, delightful experiences. Strong background in JS/TS, backend systems, and real time apps.</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Backend engineer with experience building real-time systems using Node.js, TypeScript, and Redis. Strong in debugging, API design, and system-level problem solving, with hands-on experience in multiplayer systems and secure communication applications.
+            </p>
           </div>
 
           <div class="bg-white p-4 rounded-lg shadow">
             <h3 class="font-semibold text-sm text-gray-700">Skills</h3>
             <ul class="mt-2 text-sm text-gray-600 space-y-2">
-              <li>• JavaScript / TypeScript, Node.js, Python</li>
-              <li>• React, Next.js, Tailwind CSS</li>
-              <li>• PostgreSQL, Redis, WebSockets</li>
-              <li>• System design, CI/CD, testing</li>
+              <li>• JavaScript / TypeScript, Python</li>
+              <li>• Nodejs, Express.js, WebSockets</li>
+              <li>• React, Next.js, TailwindCSS</li>
+              <li>• SQL, PostgreSQL, Redis</li>
+              <li>• Git, Postman</li>
             </ul>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow">
-            <h3 class="font-semibold text-sm text-gray-700">Tech / Tools</h3>
-            <div class="mt-2 flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs bg-gray-100 rounded">Git</span>
-              <span class="px-2 py-1 text-xs bg-gray-100 rounded">WebSockets</span>
-              <span class="px-2 py-1 text-xs bg-gray-100 rounded">Redis</span>
-            </div>
           </div>
 
           <div class="bg-white p-4 rounded-lg shadow">
@@ -95,15 +89,15 @@
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <div class="font-medium">Junior QA Engineer</div>
-                  <div class="text-sm text-gray-500">Bit Microsys — July 2022 — 2024</div>
+                  <div class="text-sm text-gray-500"> City National Bank (Bit Microsys contract) — July 2022 — Oct 2023</div>
                 </div>
                 <div class="text-sm text-gray-500">Remote</div>
               </div>
               <ul class="mt-3 text-sm text-gray-600 list-disc ml-5 space-y-1">
-                <li>Led Automated UI testing for a Legacy project (website that ran in IE) using Custom Framework in C#.</li>
-                <li>Contributed in Automated UI testing using Custom Framework for internal Banking software.</li>
-                <li>Created test cases and Tested API functionality, along with security using SOAP UI.</li>
-                <li>Wrote test cases and did Manual testing for a complex Banking software and database</li>
+                <li>Led Automated UI testing for a Legacy project (website that ran in Interenet Explorer) using Custom Framework in <b>C#</b>.</li>
+                <li>Contributed in Automated UI testing using <b>Custom C# Framework</b> for Salesforce UI.</li>
+                <li>Created test cases and Tested API responses, functionalities, along with security using <b>SOAP UI</b>.</li>
+                <li>Wrote test cases and did Manual database/UI testing for a Automated <b>CTR (Currency Transaction Report)</b> system</li>
               </ul>
             </article>
 
@@ -127,6 +121,27 @@
 
             <div class="mt-4 grid gap-6">
               <div>
+                <div class="font-medium">End-to-End Encrypted Chat Application <span class="text-xs text-gray-400">(In Progress)</span></div>
+                <div class="text-sm text-gray-500">
+                  Privacy-focused real-time chat application with strong cryptographic guarantees.
+                </div>
+              
+                <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
+                  <li><b>Seed Phrase</b> is used to register account and it is regarded as final source of truth.</li>
+                  <li><b>ECDH (Elliptical Curve Diffie-Hellman)</b> with <b>curve25519</b> is used exhange shared encryption keys between two users.</li>
+                  <li>Messages are encrypted and decrypted on frontend using shared encryption key with <b>AES-GCM</b> algorithm before ever hitting the server.</li>
+                  <li>A password is unique to each device, it is hashed using <b>Aragon2id</b>. Server <b>do not</b> have access to password hash. Login is based on <b>identity and device signature verification</b> using <b>public keys</b> saved in server.</li>
+                  <li>Using <b>Sockets</b> for real-time communication while ensuring the server never accesses plaintext messages.</li>
+                  <li>Focused on security, threat modeling, and correctness over feature count.</li>
+                </ul>
+                
+                <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
+                  <a target="_blank" href="https://github.com/PrabeshBimali/secure-chat-frontend" target="_blank" class="text-blue-500 hover:text-blue-700">Frontend Repo</a>
+                  <a target="_blank" href="https://github.com/PrabeshBimali/secure-chat-backend" class="text-blue-500 hover:text-blue-700">Backend Repo</a>
+                </div>
+              </div>
+
+              <div>
                 <div class="font-medium">Multiplayer Chess Platform</div>
                 <div class="text-sm text-gray-500">
                   Real-time multiplayer chess application with time and memory efficient game logic.
@@ -134,15 +149,16 @@
               
                 <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
                   <li>Implemented real-time gameplay using <b>sockets</b> with server-side game state validation.</li>
-                  <li>Designed a custom chess engine using Bitboards Data structure handling move validation, turn logic, and synchronization.</li>
+                  <li>Designed a custom chess engine using <b>Bitboards Data structure</b> handling move validation, turn logic, and synchronization.</li>
                   <li>Used <b>Redis</b> for managing active game rooms and fast state access.</li>
                   <li>Frontend built with <b>Next.js</b> focusing on responsiveness and low latency updates.</li>
                   <li>Deployed frontend and backend separately with production-ready configuration.</li>
+                  <li>Simple chat feature is added for real time communication between players.</li>
                 </ul>
               
                 <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
-                  <a href="https://multiplayer-chess-five.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
-                  <a href="https://github.com/PrabeshBimali/multiplayer-chess-backend" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
+                  <a target="_blank" href="https://multiplayer-chess-five.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                  <a target="_blank" href="https://github.com/PrabeshBimali/multiplayer-chess-backend" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
                 </div>
               </div>
             
@@ -154,34 +170,16 @@
               
                 <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
                   <li>Implemented draggable logic gates with real-time boolean evaluation.</li>
-                  <li>Designed an internal Directed Asyclic Graph (DAG) to calculate Signal flow correctly.</li>
+                  <li>Designed an <b>Directed Asyclic Graph (DAG)</b> to calculate signal flow fast and accurately.</li>
                   <li>Built as an educational and experimentation tool for digital logic concepts.</li>
                 </ul>
               
                 <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
-                  <a href="https://simple-logicgates-sim-psi.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
-                  <a href="https://github.com/PrabeshBimali/Simple-Logic-Gates-Simulator" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
+                  <a target="_blank" href="https://simple-logicgates-sim-psi.vercel.app/" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                  <a target="_blank" href="https://github.com/PrabeshBimali/Simple-Logic-Gates-Simulator" class="text-blue-500 hover:text-blue-700">GitHub Repo</a>
                 </div>
               </div>
             
-              <div>
-                <div class="font-medium">End-to-End Encrypted Chat Application <span class="text-xs text-gray-400">(In Progress)</span></div>
-                <div class="text-sm text-gray-500">
-                  Privacy-focused real-time chat application with strong cryptographic guarantees.
-                </div>
-              
-                <ul class="mt-2 text-sm text-gray-600 list-disc ml-5 space-y-1">
-                  <li>Designed an <b>end-to-end encryption (E2EE)</b> model using modern cryptographic primitives.</li>
-                  <li>Implemented key exchange, message encryption/decryption, and signature verification.</li>
-                  <li>Using <b>Sockets</b> for real-time communication while ensuring the server never accesses plaintext messages.</li>
-                  <li>Focused on security, threat modeling, and correctness over feature count.</li>
-                </ul>
-                
-                <div class="mt-2 flex flex-col gap-1 border-b-2 pb-5">
-                  <a href="https://github.com/PrabeshBimali/secure-chat-frontend" target="_blank" class="text-blue-500 hover:text-blue-700">Frontend Repo</a>
-                  <a href="https://github.com/PrabeshBimali/secure-chat-backend" class="text-blue-500 hover:text-blue-700">Backend Repo</a>
-                </div>
-              </div>
             
             </div>
           </section>
@@ -195,8 +193,6 @@
           </section>
         </div>
       </section>
-
-      <footer class="mt-6 text-center text-xs text-gray-500">Made with — plain HTML + Tailwind (CDN)</footer>
     </main>
   </body>
 </html>
