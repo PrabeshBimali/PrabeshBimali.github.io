@@ -1,0 +1,25 @@
+{
+  "name": "prabeshbimali.github.io",
+  "version": "1.0.0",
+  "description": "Personal Site",
+  "homepage": "https://github.com/PrabeshBimali/PrabeshBimali.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/PrabeshBimali/PrabeshBimali.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrabeshBimali/PrabeshBimali.github.io.git"
+  },
+  "license": "ISC",
+  "author": "Prabesh Bimali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}
