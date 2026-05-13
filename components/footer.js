@@ -7,7 +7,7 @@ class MyFooter extends HTMLElement {
             <div class="flex items-center gap-2">
               <span class="font-mono text-xs tracking-widest text-cyan-400 font-bold">Prabesh Bimali</span>
             </div>
-            <p class="font-mono text-[10px] text-slate-500 uppercase tracking-tight">© 2026 Fullstack Developer | Develop site for you.</p>
+            <p class="font-mono text-[10px] text-slate-500 uppercase tracking-tight">© 2026 Fullstack Developer | Willing to take on Projects most dare not.</p>
           </div>
           <div class="flex gap-8">
             <a 

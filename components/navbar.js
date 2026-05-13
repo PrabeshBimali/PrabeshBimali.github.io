@@ -3,14 +3,14 @@ class MyNavbar extends HTMLElement {
     this.innerHTML = /*html*/`
       <div class="bg-slate-950/80 border-b border-slate-800 backdrop-blur-md fixed top-0 w-full z-50">
         <div class="flex-grow container flex justify-between mx-auto px-4 md:px-8 lg:px-16 py-5 items-center">
-          <div class="">
-            <span class="font-semibold text-2xl text-cyan-400">
+          <a href="/" class="flex items-center gap-1 cursor-pointer text-2xl hover:text-cyan-300 group">
+            <span class="font-semibold text-cyan-400 group-hover:text-cyan-300">
               Prabesh
             </span> 
-            <span class="text-xl text-slate-400">
+            <span class="text-slate-400 group-hover:text-slate-300">
               Bimali
             </span>
-          </div>
+          </a>
           <div>
             <div>
               <div class="hidden gap-8 text-xl text-slate-400 md:flex">

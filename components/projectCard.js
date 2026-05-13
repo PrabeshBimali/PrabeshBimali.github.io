@@ -13,7 +13,7 @@ class ProjectCard extends HTMLElement {
         <h3 class="text-2xl text-center font-bold text-slate-100 mb-3">
           ${title}
         </h3>
-        <p class="text-slate-400 mb-6 leading-relaxed flex-grow">
+        <p class="text-slate-400 text-center mb-6 leading-relaxed flex-grow">
           ${description}
         </p>
         <div class="flex gap-3 mb-3">
