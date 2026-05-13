@@ -3,17 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prabesh Bimali — Resume</title>
+    <title>Prabesh Bimali — Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./layouts/mainLayout.js"></script>
-    <style>
-      .photo-ring{background:linear-gradient(135deg,#06b6d4,#7c3aed);padding:4px;border-radius:9999px}
-    </style>
+    <script type="module" src="./components/projectCard.js"></script>
   </head>
   <body class="bg-gray-50 text-gray-800">
     <main-layout>
-      <p>
-        test
-      </p>
+      <section class="relative flex flex-col items-center justify-center overflow-hidden border-b border-slate-800">
+        <div class="absolute inset-0 z-0 opacity-10 pointer-events-none select-none overflow-hidden">
+          <div class="font-mono text-xs text-cyan-400 p-8 leading-relaxed whitespace-pre">
+            &lt;system_arch&gt;<br/>
+            [INIT] Loading kernels...<br/>
+            [OK] Protocol: HTTP/3<br/>
+            [OK] DB_CLUSTER: active<br/>
+            [WARN] Latency detected in node-04<br/>
+            [EXEC] Balancing load...<br/>
+            [OK] Cluster healthy.<br/>
+            [INIT] Spawning worker threads...<br/>
+            [OK] All systems operational.
+            </div>
+        </div>
+
+        <div class="z-10 py-20 text-center max-w-4xl flex flex-col gap-3 md:gap-8">
+          <p class="font-code-sm uppercase text-emerald-400 mb-2 tracking-[0.3em]">FULLSTACK / BACKEND ARCHITECT</p>
+          <h1 class="font-bold text-display-lg md:text-7xl tracking-tighter text-slate-100 flex flex-col">
+            <span>
+              Building
+              <span class="text-cyan-400">Scalable</span> 
+            </span> 
+            <span>
+              Systems.
+            </span>
+          </h1>
+          <p class="font-body-base text-slate-400 text-lg mb-lg max-w-2xl mx-auto">
+              Architecting distributed backends and high-performance APIs with a focus on reliability, concurrency, and technical excellence. 
+          </p>
+          <div class="flex flex-wrap justify-center gap-5">
+            <button class="bg-cyan-400 text-slate-950 px-5 py-3 rounded-sm hover:bg-cyan-300 transition-all">
+              Contact Me
+            </button>
+            <button class="border border-slate-700 text-slate-200 px-5 py-3 rounded-sm hover:bg-slate-900 transition-all">
+              View Repository
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 gap-4">
+          <div>
+            <h2 class="text-3xl font-bold text-cyan-400 mb-2 font-mono">Projects</h2>
+            <p class="text-slate-400 font-mono text-sm">personal projects showcase</p>
+          </div>
+          <div class="text-slate-500 font-mono text-xs uppercase tracking-widest bg-slate-900 px-3 py-1 border border-slate-800 rounded">
+            Projects: 03
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+          <project-card
+            title="E2EE Chat Application"
+            description="Cryptographically secure E2EE chat application where messages are encryted using industry standard things"
+            techs="Expressjs, Reactjs, Redis, PostgreSQL"
+          >
+          </project-card>
+          <project-card
+            title="Multiplayer Chess Application"
+            description="Multiplayer Chess application made using websockets with efficient chess-engine using Bitboards"
+            techs="Expressjs, Redis, websockets" 
+            live-link="https://multiplayer-chess-five.vercel.app/"
+            repo-link="https://github.com/PrabeshBimali/multiplayer-chess"
+          >
+          </project-card>
+          <project-card
+            title="Logic Gate Simulator"
+            description="Multiplayer Chess application made using websockets with efficient chess-engine using Bitboards"
+            techs="Nextjs, Konvajs, DAG" 
+          >
+          </project-card>
+        </div>
+      </div>
+</section>
     </main-layout>
   </body>
+</html>
