@@ -14,7 +14,7 @@ Product-minded engineer with 2+ years of experience building web applications an
 ## Experience
 
 ### Backend Engineer — Singha Tech  
-**Jan 2024 – July 2025 | Kathmandu, Nepal (Remote)**
+**Jan 2024 – Dec 2025 | Kathmandu, Nepal**
 
 - Designed and implemented backend services using TypeScript (Node.js) with clean, layered architecture.
 - Built REST APIs backed by PostgreSQL, focusing on data integrity, indexing, and query optimization.
@@ -89,4 +89,4 @@ Privacy-focused real-time chat application with strong cryptographic guarantees.
 - **Backend:** Node.js, REST APIs, WebSockets  
 - **Databases:** PostgreSQL, Redis  
 - **Frontend:** React, Next.js, Tailwind CSS  
-- **Other:** System design, testing, CI/CD, Git
+- **Other:** System design, testing, CI/CD, Git, Docker
