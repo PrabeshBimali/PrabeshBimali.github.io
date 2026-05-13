@@ -4,6 +4,7 @@ class MyNavbar extends HTMLElement {
       <div class="bg-slate-950/80 border-b border-slate-800 backdrop-blur-md fixed top-0 w-full z-50">
         <div class="flex-grow container flex justify-between mx-auto px-4 md:px-8 lg:px-16 py-5 items-center">
           <a href="/" class="flex items-center gap-1 cursor-pointer text-2xl hover:text-cyan-300 group">
+            <img src="/assets/my-logo.png" alt="Logo" class="w-8 h-8 image-pixelated transition-transform group-hover:scale-110">
             <span class="font-semibold text-cyan-400 group-hover:text-cyan-300">
               Prabesh
             </span> 
