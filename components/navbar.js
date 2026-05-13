@@ -14,9 +14,9 @@ class MyNavbar extends HTMLElement {
           <div>
             <div>
               <div class="hidden gap-8 text-xl text-slate-400 md:flex">
-                <a href ="#projects" class="inline-block hover:text-cyan-400">Projects</a>
-                <a href ="#" class="hover:text-cyan-400">Blogs</a>
-                <a href ="#contact" class="hover:text-cyan-400">Contact</a>
+                <a href ="/#projects" class="inline-block hover:text-cyan-400">Projects</a>
+                <a href ="/blogs" class="hover:text-cyan-400">Blogs</a>
+                <a href ="/#contact" class="hover:text-cyan-400">Contact</a>
               </div>
             </div>
             <div class="flex md:hidden text-white">

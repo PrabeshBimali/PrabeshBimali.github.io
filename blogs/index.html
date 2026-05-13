@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Technical Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../layouts/mainLayout.js"></script>
+    <script type="module" src="../components/blogPost.js"></script>
+
+    <script type="module">
+      import { getAllBlogPosts } from "../service/blogService.js";
+
+      function addBlogs() {
+        const container = document.getElementById("blogs-container");
+        const posts = getAllBlogPosts();
+
+        if (posts.length <= 0) {
+          console.log(posts)
+          const newH1 = document.createElement("h1");
+          newH1.innerText = "Sorry, No Blogs Yet :(";
+
+          newH1.classList.add("text-xl");
+          newH1.classList.add("text-center");
+          newH1.classList.add("text-slate-400");
+          newH1.classList.add("font-bold")
+
+          container.appendChild(newH1);
+          return;
+        }
+
+        posts.forEach(post => {
+          const newElement = document.createElement("blog-post");
+          newElement.setAttribute("title", post.title);
+          newElement.setAttribute("excerpt", post.excerpt);
+          newElement.setAttribute("path", post.path);
+          newElement.setAttribute("reading-time", post.readingTime);
+
+          const formattedDate = new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric'});
+          newElement.setAttribute("date", formattedDate);
+
+          container.appendChild(newElement);
+        });
+      }
+
+      addBlogs();
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <main-layout>
+      <section class="py-24 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-slate-100 mb-12 flex items-center gap-4 font-mono">
+            Technical Blogs
+          </h2>
+          <div id="blogs-container" class="space-y-2">
+          </div>
+        </div>
+      </section>
+    </main-layout>
+  </body>
+</html>

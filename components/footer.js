@@ -22,6 +22,12 @@ class MyFooter extends HTMLElement {
             >
               LinkedIn
             </a>
+            <a 
+              class="font-mono text-xs uppercase tracking-wider text-slate-400 hover:text-cyan-400 transition-colors" 
+              href="/resume"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </footer>
