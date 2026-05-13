@@ -1,4 +1,5 @@
 import "../components/navbar.js"
+import "../components/footer.js"
 
 class MainLayout extends HTMLElement {
   connectedCallback() {
@@ -12,6 +13,9 @@ class MainLayout extends HTMLElement {
              ${this.innerHTML}
           </div>
         </main>
+
+        <my-footer>
+        </my-footer>
       </div>
     `;
   }
